@@ -1,6 +1,6 @@
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.sqa.jf</groupId>
-  <artifactId>basic-maven-project</artifactId>
+  <groupId>com.sqa.ga</groupId>
+  <artifactId>basic-project</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Basic Message Project</name>
   <description>An application which give stucture for selenium framework.</description>
