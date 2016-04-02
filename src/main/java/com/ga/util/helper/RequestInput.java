@@ -59,6 +59,7 @@ public class RequestInput {
 	// Get a int from the user, must be in acceptable range value
 	public static int getInt(String question, int... acceptableNumber) {
 		int resultValue;
+		// System.out.println(resultValue);
 		String input = null;
 		boolean validInt = false;
 		scanner = new Scanner(System.in);
@@ -67,6 +68,7 @@ public class RequestInput {
 				System.out.println(question);
 				input = scanner.nextLine();
 				resultValue = Integer.parseInt(input);
+				// System.out.println(resultValue);
 				for (int i = 0; i < acceptableNumber.length; i++) {
 					if (resultValue == acceptableNumber[i]) {
 						validInt = true;
@@ -87,6 +89,19 @@ public class RequestInput {
 				System.out.println("You have not an acceptable number (" + input + ")");
 			}
 		}
+	}
+
+	public static String getString(String question) {
+		// Local variable to hold temporary number
+		String input;
+		// Ask the user a question to get relative input
+		System.out.print(question);
+		// Set the number based on what the user enters on their
+		// keyboard
+		scanner = new Scanner(System.in);
+		input = scanner.nextLine();
+		// Return input user has entered
+		return input;
 	}
 
 	// Get a String from the user, must be an acceptable value
